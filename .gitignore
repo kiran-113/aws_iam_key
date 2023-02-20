@@ -4,8 +4,8 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
-*.lock.*
-*.lock
+.*.lock.*
+.*.lock
 
 # Crash log files
 crash.log
