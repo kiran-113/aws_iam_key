@@ -37,7 +37,9 @@ data "aws_iam_policy_document" "find_users_to_refresh" {
       "iam:ListAccessKeys",
       "iam:ListUsers",
       "iam:ListUserTags",
-      "iam:UnTagUser"
+      "iam:UnTagUser",
+      "kms:ListKeys",
+      "kms:GenerateDataKey"
     ]
   }
 
@@ -93,7 +95,9 @@ data "aws_iam_policy_document" "update_iam_credentials_for_user" {
       "iam:ListAccessKeys",
       "iam:ListUsers",
       "iam:UpdateLoginProfile",
-      "iam:ListUserTags"
+      "iam:ListUserTags",
+      "kms:ListKeys",
+      "kms:GenerateDataKey"
     ]
   }
 
